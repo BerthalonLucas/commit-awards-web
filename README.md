@@ -45,7 +45,9 @@ Une application web interactive pour explorer et analyser les messages de commit
 
 ### Format JSON attendu
 
-L'application accepte un fichier JSON avec la structure suivante :
+L'application accepte deux fichiers JSON avec les structures suivantes :
+
+json avec auteur et committer (**a droite dans la page d'import**):
 
 ```json
 [
@@ -70,6 +72,20 @@ L'application accepte un fichier JSON avec la structure suivante :
 	}
 ]
 ```
+
+json avec prediction et message (**a gauche dans la page d'import**) :
+
+```json
+[
+  {
+    "sha": "78b545ce7f3d2435e59f1c15d41d2a940452cb16",
+    "is_funny": false,
+    "message": "toto",
+    "probability": 0.02
+  }
+]
+```
+
 
 ### Extraction automatique des noms d'utilisateur
 
