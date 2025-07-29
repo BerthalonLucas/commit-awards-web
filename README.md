@@ -49,19 +49,25 @@ L'application accepte un fichier JSON avec la structure suivante :
 
 ```json
 [
-  {
-    "message": "fix: corrige le bug qui faisait danser les boutons",
-    "author": {
-      "name": "utilisateur-github",
-      "email": "user@example.com"
-    },
-    "date": "2024-01-15T10:30:00Z",
-    "sha": "abc123def456",
-    "repo": {
-      "name": "utilisateur-github/mon-projet",
-      "url": "https://github.com/utilisateur-github/mon-projet"
-    }
-  }
+	{
+		"sha": "c8a64cd03c404e9260612ef51cfe5a5e82ab71fe",
+		"repo": {
+			"org": "exam-2025-07-11",
+			"name": "xxxxxx_c-piscine-exam-00_exam_17h24m53s",
+			"full_name": "exam-2025-07-11/xwenger_c-piscine-exam-00_exam_17h24m53s"
+		},
+		"author": {
+			"name": "Exam 42",
+			"email": "exam-no-reply@42.fr",
+			"date": "2099-07-11T17:59:36+02:00"
+		},
+		"committer": {
+			"name": "Exam 42",
+			"email": "exam-no-reply@42.fr",
+			"date": "2099-07-11T17:59:36+02:00"
+		},
+		"message": "exemple"
+	}
 ]
 ```
 
