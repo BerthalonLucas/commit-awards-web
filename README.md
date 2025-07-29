@@ -86,6 +86,10 @@ json avec prediction et message (**a gauche dans la page d'import**) :
 ]
 ```
 
+```
+nom du fichier avec les predictions : exam-2025-07-classified.json
+```
+
 
 ### Extraction automatique des noms d'utilisateur
 
@@ -119,12 +123,22 @@ L'application extrait automatiquement le nom d'utilisateur à partir du champ `r
 commit-awards-web/
 ├── src/
 │   ├── components/     # Composants React réutilisables
+│   │   ├── CommitAwards.js
+│   │   ├── CommitCard.js
+│   │   ├── CommitList.js
+│   │   ├── DataImporter.js
+│   │   └── Header.js
 │   ├── context/        # Contextes React (gestion d'état)
-│   ├── pages/          # Pages de l'application
-│   ├── utils/          # Fonctions utilitaires
+│   │   └── CommitContext.js
+│   ├── App.js          # Composant principal de l'application
+│   ├── index.js        # Point d'entrée de l'application
 │   └── index.css       # Styles globaux
 ├── public/             # Fichiers statiques
-└── package.json        # Configuration du projet
+│   └── index.html
+├── exam-2025-07-classified.json  # Fichier de données d'exemple
+├── package.json        # Configuration du projet
+├── tailwind.config.js  # Configuration Tailwind CSS
+└── postcss.config.js   # Configuration PostCSS
 ```
 
 ## 🎨 Personnalisation
